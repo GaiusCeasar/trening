@@ -1,3 +1,5 @@
+from pytest_html.extras import json
+
 from api import PetFriends
 from settings import valid_email, valid_password, not_valid_email, not_valid_password
 
@@ -9,6 +11,7 @@ def test_get_api_key_valid_user(email=valid_email, password=valid_password):
     status, result = pf.get_api_key(email, password)
     assert status == 200
     assert 'key' in result
+    print(result)
 
 '''Тест проверки списка питомцев'''
 def test_get_all_pets_with_valid_key(filter=''):
@@ -16,9 +19,10 @@ def test_get_all_pets_with_valid_key(filter=''):
     status, result = pf.get_list_of_pets(auth_key, filter)
     assert status ==200
     assert len(result['pets']) > 0
+    print(json(result))
 
 '''Тест создания питомца'''
-def test_add_new_pet_with_valid_data(name = 'aaaaaaaaaaaa', animal_type = 'cat', age = '11', pet_photo = 'images/cat.jpg'):
+def test_add_new_pet_with_valid_data(name = 'aaaaaaaaaaaa', animal_type = 'cat', age = '11', pet_photo = ''):
     _, auth_key = pf.get_api_key(valid_email, valid_password)
     status, result = pf.add_information_about_new_pet(auth_key, name, animal_type, age, pet_photo)
     assert status == 200
