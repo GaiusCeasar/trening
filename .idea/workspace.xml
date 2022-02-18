@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57dcd3db-3e09-40af-8e10-b16c7963d616" name="Changes" comment="added new">
-      <change beforePath="$PROJECT_DIR$/tests/testAST.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testAST.py" afterDir="false" />
-    </list>
+    <list default="true" id="57dcd3db-3e09-40af-8e10-b16c7963d616" name="Changes" comment="added tests selenium" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640183723467</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added tests selenium">
+      <created>1645163759531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645163759531</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added tests selenium">
+      <created>1645163777085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645163777085</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added new" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new" />
+    <MESSAGE value="added tests selenium" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests selenium" />
   </component>
 </project>
