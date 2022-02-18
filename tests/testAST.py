@@ -39,9 +39,8 @@ def test_add_new_applications(client_id='1', agency_id='1', bank_code="sber", us
                               mortgage_amount=0, mortgage_remaining_debt=0, interest_rate=0, start_date="2021-12-22",
                               end_date="2021-12-22",
                               insurance_term="12",
-                              products="[{\"life\": [\"renis\", \"absolute\", \"pari\"]}, {\"property\": [\"renis\", "
-                                       "\"absolute\", \"pari\"]}, {\"title\": [\"renis\", \"absolute\", \"pari\"]}]",
-                              property_build_year="2015"):
+                              products=[{"life": ["renis", "absolute", "pari"]}, {"property": ["renis", "absolute", "pari"]}, {"title": ["renis", "absolute", "pari"] } ],
+                              property_build_year=2015):
     _, authorization = pf.get_token(valid_login, valid_password)
     status, result = pf.add_new_application(authorization, client_id, agency_id, bank_code, user_id, gender, first_name,
                                             middle_name,
