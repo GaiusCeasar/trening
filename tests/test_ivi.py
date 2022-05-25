@@ -9,6 +9,7 @@ def test_get_basic_auth():
     status, result = pf.get_basic_auth()
     assert status == 200
     assert 'key' in result
+    print(result)
 
 '''Тест получения списка пользователей'''
 def test_get_all_hero():
