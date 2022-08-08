@@ -1,6 +1,7 @@
 import requests
 from settings import key
 from settings import msisdn
+from settings import userID
 import json
 
 class Premium:
@@ -40,6 +41,54 @@ class Premium:
         headers = {'x-token': key}
 
         res = requests.get(self.base_url + 'api/sub/v1/profiles/' + msisdn, headers=headers, verify=False)
+        status = res.status_code
+        result = ' '
+
+        try:
+            result = res.json()
+        except:
+            result = res.text
+        return status, result
+
+    def get_available(self, key=key, userID=userID):
+
+        headers = {'x-token': key}
+        params = {
+            "userID": userID
+        }
+
+        res = requests.get(self.base_url + 'api/sub/v1/subscriptions/available/', params=params, headers=headers, verify=False)
+        status = res.status_code
+        result = ' '
+
+        try:
+            result = res.json()
+        except:
+            result = res.text
+        return status, result
+
+    def get_active(self, key=key, userID=userID):
+
+        headers = {'x-token': key}
+        params = {
+            "userID": userID
+        }
+
+        res = requests.get(self.base_url + 'api/sub/v1/subscriptions/active/', params=params, headers=headers, verify=False)
+        status = res.status_code
+        result = ' '
+
+        try:
+            result = res.json()
+        except:
+            result = res.text
+        return status, result
+
+    def get_profiles(self, key=key):
+
+        headers = {'x-token': key}
+
+        res = requests.get(self.base_url + 'api/sub/v1/profiles/' + msisdn + '/status', headers=headers, verify=False)
         status = res.status_code
         result = ' '
 
