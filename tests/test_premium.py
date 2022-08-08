@@ -6,8 +6,9 @@ pr = Premium()
 
 
 
-'''Тест available'''
+'''Тест available{msisdn}'''
 def test_available():
     status, result = pr.get_available()
     assert status == 200
-    assert 'result' in result
+    assert 'subscriptions' in result
+    print(result)

@@ -1,4 +1,5 @@
 import requests
+
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 import json
 
@@ -12,7 +13,8 @@ class PetFriends:
             'email' : email,
             'password' : password
         }
-        res = requests.get(self.base_url + 'api/key', headers=headers)
+        res = requests.get(self.base_url + 'api/key', headers=headers, verify=False)
+
         status = res.status_code
         result = ' '
 

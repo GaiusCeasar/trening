@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57dcd3db-3e09-40af-8e10-b16c7963d616" name="Changes" comment="upd">
-      <change afterPath="$PROJECT_DIR$/api_premium.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_premium.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_premium.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_premium.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_ivi.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ivi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_premium.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_premium.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test_premium.test_available">
-    <configuration name="Python tests for testAST.test_add_new_applications" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_ivi.test_get_all_hero" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="tests_ivi" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,21 +57,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testAST.test_add_new_applications&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for testAST.test_get_applications_by_params" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="tests_ivi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testAST.test_get_applications_by_params&quot;" />
+      <option name="_new_target" value="&quot;test_ivi.test_get_all_hero&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -86,6 +72,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_ivi.test_get_basic_auth&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_pet_friends.test_get_api_key_valid_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="tests_ivi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_pet_friends.test_get_api_key_valid_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -120,10 +120,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_premium.test_available" />
-        <item itemvalue="Python tests.Python tests in test_premium.py" />
+        <item itemvalue="Python tests.Python tests for test_ivi.test_get_all_hero" />
         <item itemvalue="Python tests.Python tests for test_ivi.test_get_basic_auth" />
-        <item itemvalue="Python tests.Python tests for testAST.test_add_new_applications" />
-        <item itemvalue="Python tests.Python tests for testAST.test_get_applications_by_params" />
+        <item itemvalue="Python tests.Python tests for test_pet_friends.test_get_api_key_valid_user" />
+        <item itemvalue="Python tests.Python tests in test_premium.py" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653473300501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="upd">
+      <created>1653484534889</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653484534889</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
