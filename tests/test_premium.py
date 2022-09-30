@@ -22,7 +22,7 @@ def test_profiles_msisdn():
     status, result = pr.get_profiles_msisdn()
     assert status == 200
     assert 'status' in result
-    assert result['subscription'] == 'individual' or result['subscription'] == ' '
+    assert result['subscription'] == 'individual' or result['subscription'] == ''
     assert result['status'] == 1 or result['status'] == 0
 
 

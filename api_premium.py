@@ -1,7 +1,7 @@
 import requests
-from settings import key
-from settings import msisdn
-from settings import userID
+from settings_premium import key
+from settings_premium import msisdn
+from settings_premium import userID
 import json
 
 class Premium:
